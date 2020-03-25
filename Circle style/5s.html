@@ -5,24 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <title>安全检查中,请稍候5秒钟</title>
 <script crossorigin="anonymous" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" src="https://lib.baomitu.com/jquery/3.3.1/jquery.min.js"></script>
-<SCRIPT type="text/javascript">        
-            var maxtime = 5; 
-            function CountDown() {
-                if (maxtime >= 0) {
-                    minutes = Math.floor(maxtime / 60);
-                    seconds = Math.floor(maxtime % 60);
-                    msg = "稍候 " + seconds + " 秒";
-                    
-                    if (maxtime == 0){msg = "即将进入！";}
-					document.all["timer"].innerHTML = msg;
-                        --maxtime;
-                } else{
-                    clearInterval(timer);
-                   
-                }
-            }
-            timer = setInterval("CountDown()", 1000);                
-</SCRIPT>
 <SCRIPT>
 //显示ip节点
 $(function() {
@@ -171,7 +153,7 @@ h3 {
   viewBox="0 0 38 38" 
   preserveAspectRatio="xMinYMin meet"
   >
-  <text x="14" y="21" font-family="Monaco" font-size="2px" style="letter-spacing:0.6;font-weight: 900;fill: #8BC34A;"  id="timer">稍候,读取中
+  <text x="14" y="21" font-family="Monaco" font-size="2px" style="letter-spacing:0.6;font-weight: 900;fill: #8BC34A;"  id="timer">安全检查中<br>请稍后
      <animate 
        attributeName="opacity"
        values="0;1;0" dur="1.8s"
